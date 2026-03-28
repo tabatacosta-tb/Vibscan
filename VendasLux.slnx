@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="VendasLux.Application/VendasLux.Application.csproj" />
+  <Project Path="VendasLux.Domain/VendasLux.Domain.csproj" />
+  <Project Path="VendasLux.Infrastructure/VendasLux.Infrastructure.csproj" />
+  <Project Path="VendasLux/VendasLux.API.csproj" />
+</Solution>

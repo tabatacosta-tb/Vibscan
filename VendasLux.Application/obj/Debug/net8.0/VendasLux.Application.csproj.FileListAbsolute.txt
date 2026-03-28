@@ -1,0 +1,15 @@
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\obj\Debug\net8.0\VendasLux.Application.csproj.AssemblyReference.cache
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\obj\Debug\net8.0\VendasLux.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\obj\Debug\net8.0\VendasLux.Application.AssemblyInfoInputs.cache
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\obj\Debug\net8.0\VendasLux.Application.AssemblyInfo.cs
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\obj\Debug\net8.0\VendasLux.Application.csproj.CoreCompileInputs.cache
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\bin\Debug\net8.0\VendasLux.Application.deps.json
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\bin\Debug\net8.0\VendasLux.Application.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\bin\Debug\net8.0\VendasLux.Application.pdb
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\bin\Debug\net8.0\VendasLux.Domain.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\bin\Debug\net8.0\VendasLux.Domain.pdb
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\obj\Debug\net8.0\VendasLu.F55D30E4.Up2Date
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\obj\Debug\net8.0\VendasLux.Application.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\obj\Debug\net8.0\refint\VendasLux.Application.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\obj\Debug\net8.0\VendasLux.Application.pdb
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Application\obj\Debug\net8.0\ref\VendasLux.Application.dll

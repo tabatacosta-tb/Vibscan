@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "VendasLux.Infrastructure/1.0.0": {
+        "dependencies": {
+          "VendasLux.Domain": "1.0.0"
+        },
+        "runtime": {
+          "VendasLux.Infrastructure.dll": {}
+        }
+      },
+      "VendasLux.Domain/1.0.0": {
+        "runtime": {
+          "VendasLux.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VendasLux.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VendasLux.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

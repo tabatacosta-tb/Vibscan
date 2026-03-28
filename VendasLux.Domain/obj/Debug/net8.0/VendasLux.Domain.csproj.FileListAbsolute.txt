@@ -1,0 +1,11 @@
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\bin\Debug\net8.0\VendasLux.Domain.deps.json
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\bin\Debug\net8.0\VendasLux.Domain.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\bin\Debug\net8.0\VendasLux.Domain.pdb
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\obj\Debug\net8.0\VendasLux.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\obj\Debug\net8.0\VendasLux.Domain.AssemblyInfoInputs.cache
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\obj\Debug\net8.0\VendasLux.Domain.AssemblyInfo.cs
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\obj\Debug\net8.0\VendasLux.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\obj\Debug\net8.0\VendasLux.Domain.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\obj\Debug\net8.0\refint\VendasLux.Domain.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\obj\Debug\net8.0\VendasLux.Domain.pdb
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Domain\obj\Debug\net8.0\ref\VendasLux.Domain.dll

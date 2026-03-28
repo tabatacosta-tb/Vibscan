@@ -1,0 +1,15 @@
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\bin\Debug\net8.0\VendasLux.Infrastructure.deps.json
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\bin\Debug\net8.0\VendasLux.Infrastructure.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\bin\Debug\net8.0\VendasLux.Infrastructure.pdb
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\obj\Debug\net8.0\VendasLux.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\obj\Debug\net8.0\VendasLux.Infrastructure.AssemblyInfoInputs.cache
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\obj\Debug\net8.0\VendasLux.Infrastructure.AssemblyInfo.cs
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\obj\Debug\net8.0\VendasLux.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\obj\Debug\net8.0\VendasLux.Infrastructure.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\obj\Debug\net8.0\refint\VendasLux.Infrastructure.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\obj\Debug\net8.0\VendasLux.Infrastructure.pdb
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\obj\Debug\net8.0\ref\VendasLux.Infrastructure.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\bin\Debug\net8.0\VendasLux.Domain.dll
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\bin\Debug\net8.0\VendasLux.Domain.pdb
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\obj\Debug\net8.0\VendasLux.Infrastructure.csproj.AssemblyReference.cache
+C:\Projetos\VendasLux\backend\VendasLux\VendasLux.Infrastructure\obj\Debug\net8.0\VendasLu.5B082ECA.Up2Date
