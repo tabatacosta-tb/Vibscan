@@ -1,0 +1,42 @@
+@page "/analise/{Id:guid}"
+@inject VibeScan.Blazor.Services.VibeScanApiService Api
+
+<PageTitle>VibeScan — Detalhe da Análise</PageTitle>
+
+<div class="vs-page">
+    @if (Carregando)
+    {
+        <div class="vs-loading-center">
+            <span class="vs-spinner vs-spinner--lg" />
+        </div>
+    }
+    else if (Analise is null)
+    {
+        <div class="vs-empty">
+            <p>Análise não encontrada.</p>
+            <a href="/historico" class="vs-btn vs-btn--secondary">Voltar ao histórico</a>
+        </div>
+    }
+    else
+    {
+        <div class="vs-detalhe-header">
+            <a href="/historico" class="vs-btn vs-btn--ghost">← Voltar</a>
+            <h2 class="vs-detalhe-header__title">Resultado da Análise</h2>
+        </div>
+        <ResultadoAnalise Analise="Analise" />
+    }
+</div>
+
+@code {
+    [Parameter] public Guid Id { get; set; }
+
+    private VibeScan.Blazor.Models.AnalisarResponse? Analise { get; set; }
+    private bool Carregando { get; set; } = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try   { Analise = await Api.ObterDetalheAsync(Id); }
+        catch { /* null = não encontrado */ }
+        finally { Carregando = false; }
+    }
+}
