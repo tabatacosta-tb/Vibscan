@@ -1,0 +1,94 @@
+@page "/"
+@inject VibeScan.Blazor.Services.VibeScanApiService Api
+
+<PageTitle>VibeScan — Analisar Código</PageTitle>
+
+<div class="vs-page">
+    <header class="vs-hero">
+        <h1 class="vs-hero__title">Analise seu <span class="vs-hero__accent">Vibe Code</span></h1>
+        <p class="vs-hero__sub">Cole o código gerado por IA e receba diagnóstico de arquitetura, segurança e um prompt melhorado.</p>
+    </header>
+
+    <div class="vs-form-card">
+        <div class="vs-field">
+            <label class="vs-label">Código para analisar <span class="vs-label--required">*</span></label>
+            <textarea class="vs-textarea vs-textarea--code"
+                      rows="14"
+                      placeholder="Cole aqui o código C# gerado pelo vibe coding..."
+                      @bind="Codigo"
+                      @bind:event="oninput" />
+            @if (MostrarErro && string.IsNullOrWhiteSpace(Codigo))
+            {
+                <span class="vs-field__error">O código é obrigatório.</span>
+            }
+        </div>
+
+        <div class="vs-field">
+            <label class="vs-label">Prompt original <span class="vs-label--optional">(opcional)</span></label>
+            <textarea class="vs-textarea"
+                      rows="3"
+                      placeholder="Cole o prompt que você usou para gerar o código (ajuda a IA a dar sugestões mais precisas)..."
+                      @bind="PromptOriginal" />
+        </div>
+
+        <button class="vs-btn vs-btn--primary @(Analisando ? "vs-btn--loading" : "")"
+                disabled="@Analisando"
+                @onclick="AnalisarAsync">
+            @if (Analisando)
+            {
+                <span class="vs-spinner" />
+                <span>Analisando...</span>
+            }
+            else
+            {
+                <span>⬡ Analisar Código</span>
+            }
+        </button>
+
+        @if (!string.IsNullOrEmpty(ErroMensagem))
+        {
+            <div class="vs-alert vs-alert--error">
+                <strong>Erro:</strong> @ErroMensagem
+            </div>
+        }
+    </div>
+
+    @if (Resultado is not null)
+    {
+        <ResultadoAnalise Analise="Resultado" />
+    }
+</div>
+
+@code {
+    private string Codigo        { get; set; } = string.Empty;
+    private string PromptOriginal { get; set; } = string.Empty;
+    private bool Analisando      { get; set; }
+    private bool MostrarErro     { get; set; }
+    private string ErroMensagem  { get; set; } = string.Empty;
+
+    private VibeScan.Blazor.Models.AnalisarResponse? Resultado { get; set; }
+
+    private async Task AnalisarAsync()
+    {
+        MostrarErro   = true;
+        ErroMensagem  = string.Empty;
+
+        if (string.IsNullOrWhiteSpace(Codigo)) return;
+
+        Analisando = true;
+        Resultado  = null;
+
+        try
+        {
+            Resultado = await Api.AnalisarAsync(Codigo, PromptOriginal);
+        }
+        catch (Exception ex)
+        {
+            ErroMensagem = $"Não foi possível concluir a análise: {ex.Message}";
+        }
+        finally
+        {
+            Analisando = false;
+        }
+    }
+}
