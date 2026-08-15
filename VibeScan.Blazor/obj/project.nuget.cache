@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8dxREnIXBG4=",
+  "dgSpecHash": "9dPuKPzf5CQ=",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\VibeScan\\VibeScan_clean\\VibeScan.Blazor\\VibeScan.Blazor.csproj",
+  "projectFilePath": "C:\\Projeto\\Vibscan\\VibeScan.Blazor\\VibeScan.Blazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.0\\microsoft.aspnetcore.components.8.0.0.nupkg.sha512",
@@ -28,15 +28,15 @@
     "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.jsinterop\\8.0.0\\microsoft.jsinterop.8.0.0.nupkg.sha512",
     "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.0\\microsoft.jsinterop.webassembly.8.0.0.nupkg.sha512",
-    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.28\\microsoft.net.illink.tasks.8.0.28.nupkg.sha512",
-    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\10.0.10\\microsoft.net.sdk.webassembly.pack.10.0.10.nupkg.sha512",
+    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.30\\microsoft.net.illink.tasks.8.0.30.nupkg.sha512",
+    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\10.0.11\\microsoft.net.sdk.webassembly.pack.10.0.11.nupkg.sha512",
     "C:\\Users\\tabata.costa\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\tabata.costa\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\tabata.costa\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
-    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.28\\microsoft.windowsdesktop.app.ref.8.0.28.nupkg.sha512",
-    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.28\\microsoft.netcore.app.ref.8.0.28.nupkg.sha512",
-    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.28\\microsoft.aspnetcore.app.ref.8.0.28.nupkg.sha512",
-    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.29\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.29.nupkg.sha512"
+    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.30\\microsoft.windowsdesktop.app.ref.8.0.30.nupkg.sha512",
+    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.30\\microsoft.netcore.app.ref.8.0.30.nupkg.sha512",
+    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.30\\microsoft.aspnetcore.app.ref.8.0.30.nupkg.sha512",
+    "C:\\Users\\tabata.costa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.30\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.30.nupkg.sha512"
   ],
   "logs": []
 }

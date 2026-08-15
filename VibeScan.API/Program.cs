@@ -2,6 +2,8 @@ using VibeScan.API.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.UseUrls("https://localhost:7067", "http://localhost:5067");
+
 // ── Serviços ─────────────────────────────────────────────────────────────────
 builder.Services
     .AddVibeScanDomain()
@@ -23,7 +25,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("BlazorPolicy", policy =>
-        policy.WithOrigins("https://localhost:7200", "http://localhost:5200")
+        policy.WithOrigins("https://localhost:60638", "http://localhost:60639")
               .AllowAnyHeader()
               .AllowAnyMethod());
 });

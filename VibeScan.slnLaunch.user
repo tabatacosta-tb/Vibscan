@@ -5,6 +5,10 @@
       {
         "Path": "VibeScan.API\\VibeScan.API.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "VibeScan.Blazor\\VibeScan.Blazor.csproj",
+        "Action": "Start"
       }
     ]
   }

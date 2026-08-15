@@ -10,7 +10,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 // Aponta para a VibeScan.API
 builder.Services.AddScoped(sp => new HttpClient
 {
-    BaseAddress = new Uri("https://localhost:7100")
+    BaseAddress = new Uri("https://localhost:7067")
 });
 
 builder.Services.AddScoped<VibeScanApiService>();

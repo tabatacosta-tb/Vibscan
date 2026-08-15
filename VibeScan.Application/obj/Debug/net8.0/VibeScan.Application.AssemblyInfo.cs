@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VibeScan.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+627d5e039253d73e22a833dc646e22fbad08706a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a662aed1f80ebffb248e645ab940c58b5f1feac9")]
 [assembly: System.Reflection.AssemblyProductAttribute("VibeScan.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VibeScan.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

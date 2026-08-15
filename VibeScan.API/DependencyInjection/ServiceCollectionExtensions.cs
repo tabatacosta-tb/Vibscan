@@ -37,14 +37,18 @@ public static class ServiceCollectionExtensions
         services.Configure<ClaudeSettings>(
             configuration.GetSection(ClaudeSettings.SectionName));
 
+        // Temporário para demonstração: usando mock em vez da Claude API real.
+        // Para usar a Claude API real, descomente o registro original abaixo e coloque a ApiKey no appsettings.json.
+        services.AddSingleton<IAnalisadorPort, MockAnalisadorAdapter>();
+
         // HttpClient para Claude com base URL configurada
-        services.AddHttpClient<IAnalisadorPort, ClaudeAnalisadorAdapter>(client =>
-        {
-            var baseUrl = configuration[$"{ClaudeSettings.SectionName}:BaseUrl"]
-                          ?? "https://api.anthropic.com";
-            client.BaseAddress = new Uri(baseUrl);
-            client.Timeout     = TimeSpan.FromSeconds(60);
-        });
+        // services.AddHttpClient<IAnalisadorPort, ClaudeAnalisadorAdapter>(client =>
+        // {
+        //     var baseUrl = configuration[$"{ClaudeSettings.SectionName}:BaseUrl"]
+        //                   ?? "https://api.anthropic.com";
+        //     client.BaseAddress = new Uri(baseUrl);
+        //     client.Timeout     = TimeSpan.FromSeconds(60);
+        // });
 
         return services;
     }

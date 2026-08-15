@@ -10,3 +10,16 @@ C:\Projetos\VibeScan\VibeScan_clean\VibeScan.Domain\obj\Debug\net8.0\VibeScan.Do
 C:\Projetos\VibeScan\VibeScan_clean\VibeScan.Domain\obj\Debug\net8.0\refint\VibeScan.Domain.dll
 C:\Projetos\VibeScan\VibeScan_clean\VibeScan.Domain\obj\Debug\net8.0\VibeScan.Domain.pdb
 C:\Projetos\VibeScan\VibeScan_clean\VibeScan.Domain\obj\Debug\net8.0\ref\VibeScan.Domain.dll
+C:\Projeto\Vibscan\VibeScan.Domain\bin\Debug\net8.0\VibeScan.Domain.deps.json
+C:\Projeto\Vibscan\VibeScan.Domain\bin\Debug\net8.0\VibeScan.Domain.dll
+C:\Projeto\Vibscan\VibeScan.Domain\bin\Debug\net8.0\VibeScan.Domain.pdb
+C:\Projeto\Vibscan\VibeScan.Domain\obj\Debug\net8.0\VibeScan.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projeto\Vibscan\VibeScan.Domain\obj\Debug\net8.0\VibeScan.Domain.AssemblyInfoInputs.cache
+C:\Projeto\Vibscan\VibeScan.Domain\obj\Debug\net8.0\VibeScan.Domain.AssemblyInfo.cs
+C:\Projeto\Vibscan\VibeScan.Domain\obj\Debug\net8.0\VibeScan.Domain.csproj.CoreCompileInputs.cache
+C:\Projeto\Vibscan\VibeScan.Domain\obj\Debug\net8.0\VibeScan.Domain.sourcelink.json
+C:\Projeto\Vibscan\VibeScan.Domain\obj\Debug\net8.0\VibeScan.Domain.dll
+C:\Projeto\Vibscan\VibeScan.Domain\obj\Debug\net8.0\refint\VibeScan.Domain.dll
+C:\Projeto\Vibscan\VibeScan.Domain\obj\Debug\net8.0\VibeScan.Domain.pdb
+C:\Projeto\Vibscan\VibeScan.Domain\obj\Debug\net8.0\ref\VibeScan.Domain.dll
+C:\Projeto\Vibscan\VibeScan.Domain\obj\Debug\net8.0\VibeScan.43BE00C3.Up2Date

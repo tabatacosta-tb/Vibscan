@@ -2,7 +2,7 @@
 
 <div class="vs-resultado">
 
-    {{!-- Score + Resumo --}}
+    @* Score + Resumo *@
     <div class="vs-resultado__header">
         <div class="vs-score-ring" style="--score-color: @Analise.Score.Cor">
             <svg viewBox="0 0 64 64" class="vs-score-ring__svg">
@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    {{!-- Problemas por categoria --}}
+    @* Problemas por categoria *@
     <section class="vs-section">
         <h3 class="vs-section__title">Problemas Encontrados
             <span class="vs-section__count">@Analise.Problemas.Count</span>
@@ -59,7 +59,7 @@
         }
     </section>
 
-    {{!-- Arquitetura recomendada --}}
+    @* Arquitetura recomendada *@
     <section class="vs-section">
         <h3 class="vs-section__title">🏗️ Arquitetura Recomendada</h3>
         <div class="vs-card-destaque">
@@ -67,7 +67,7 @@
         </div>
     </section>
 
-    {{!-- Prompt melhorado --}}
+    @* Prompt melhorado *@
     <section class="vs-section">
         <h3 class="vs-section__title">✨ Prompt Melhorado</h3>
         <p class="vs-section__desc">Use este prompt no seu vibe coding para gerar um código melhor:</p>

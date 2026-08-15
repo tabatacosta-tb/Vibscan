@@ -21,9 +21,20 @@ public sealed class VibeScanApiService
         string? promptOriginal,
         CancellationToken ct = default)
     {
+        if (string.IsNullOrWhiteSpace(codigo))
+            throw new ArgumentException("Informe o código para análise.", nameof(codigo));
+
         var request = new AnalisarRequest(codigo, promptOriginal);
-        var response = await _http.PostAsJsonAsync("api/analise", request, ct);
-        response.EnsureSuccessStatusCode();
+
+        using var response = await _http.PostAsJsonAsync("/api/analise", request, ct);
+
+        if (!response.IsSuccessStatusCode)
+        {
+            var body = await response.Content.ReadAsStringAsync(ct);
+            throw new HttpRequestException(
+                $"Erro ao analisar código. Status: {(int)response.StatusCode} {response.ReasonPhrase}. Resposta: {body}");
+        }
+
         return await response.Content.ReadFromJsonAsync<AnalisarResponse>(cancellationToken: ct);
     }
 

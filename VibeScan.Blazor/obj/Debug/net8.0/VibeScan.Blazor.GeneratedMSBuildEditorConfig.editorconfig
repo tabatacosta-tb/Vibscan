@@ -16,41 +16,41 @@ build_property.EntryPointFilePath =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = VibeScan.Blazor
 build_property.RootNamespace = VibeScan.Blazor
-build_property.ProjectDir = C:\Projetos\VibeScan\VibeScan_clean\VibeScan.Blazor\
+build_property.ProjectDir = C:\Projeto\Vibscan\VibeScan.Blazor\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projetos\VibeScan\VibeScan_clean\VibeScan.Blazor
+build_property.MSBuildProjectDirectory = C:\Projeto\Vibscan\VibeScan.Blazor
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Projetos/VibeScan/VibeScan_clean/VibeScan.Blazor/App.razor]
+[C:/Projeto/Vibscan/VibeScan.Blazor/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/VibeScan/VibeScan_clean/VibeScan.Blazor/Components/MainLayout.razor]
+[C:/Projeto/Vibscan/VibeScan.Blazor/Components/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYWluTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/VibeScan/VibeScan_clean/VibeScan.Blazor/Components/ResultadoAnalise.razor]
+[C:/Projeto/Vibscan/VibeScan.Blazor/Components/ResultadoAnalise.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZXN1bHRhZG9BbmFsaXNlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/VibeScan/VibeScan_clean/VibeScan.Blazor/Pages/Detalhe.razor]
+[C:/Projeto/Vibscan/VibeScan.Blazor/Pages/Detalhe.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWxoZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/VibeScan/VibeScan_clean/VibeScan.Blazor/Pages/Historico.razor]
+[C:/Projeto/Vibscan/VibeScan.Blazor/Pages/Historico.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yaWNvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/VibeScan/VibeScan_clean/VibeScan.Blazor/Pages/Index.razor]
+[C:/Projeto/Vibscan/VibeScan.Blazor/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/VibeScan/VibeScan_clean/VibeScan.Blazor/_Imports.razor]
+[C:/Projeto/Vibscan/VibeScan.Blazor/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

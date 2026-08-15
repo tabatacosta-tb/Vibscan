@@ -6,20 +6,43 @@
 <div class="vs-page">
     <header class="vs-hero">
         <h1 class="vs-hero__title">Analise seu <span class="vs-hero__accent">Vibe Code</span></h1>
-        <p class="vs-hero__sub">Cole o código gerado por IA e receba diagnóstico de arquitetura, segurança e um prompt melhorado.</p>
+        <p class="vs-hero__sub">Envie o código gerado por IA e receba diagnóstico de arquitetura, segurança e um prompt melhorado.</p>
     </header>
 
     <div class="vs-form-card">
         <div class="vs-field">
             <label class="vs-label">Código para analisar <span class="vs-label--required">*</span></label>
-            <textarea class="vs-textarea vs-textarea--code"
-                      rows="14"
-                      placeholder="Cole aqui o código C# gerado pelo vibe coding..."
-                      @bind="Codigo"
-                      @bind:event="oninput" />
+            <label style="@UploadAreaStyle"
+                   @onmouseenter="() => UploadAreaHover = true"
+                   @onmouseleave="() => UploadAreaHover = false">
+                <InputFile OnChange="CarregarArquivo"
+                           accept=".cs,.py,.js,.ts,.java,.go"
+                           style="position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer;" />
+                @if (ArquivoCarregado)
+                {
+                    <span style="display:flex; align-items:center; justify-content:center; gap:10px; color:#d9f99d; font-weight:700;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" fill="#22c55e" />
+                            <path d="M7 12.5l3.2 3.2L17.5 8" stroke="#052e16" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        @NomeArquivo
+                    </span>
+                    <span style="display:block; margin-top:8px; color:#94a3b8; font-size:0.9rem;">@TamanhoArquivoFormatado</span>
+                }
+                else
+                {
+                    <svg width="42" height="42" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="margin-bottom:12px; color:#a78bfa;">
+                        <path d="M12 16V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M7 10l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5 19h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <span style="display:block; color:#e5e7eb; font-weight:700;">Clique para selecionar o arquivo</span>
+                    <span style="display:block; margin-top:8px; color:#94a3b8; font-size:0.9rem;">.cs · .py · .js · .ts · .java · .go</span>
+                }
+            </label>
             @if (MostrarErro && string.IsNullOrWhiteSpace(Codigo))
             {
-                <span class="vs-field__error">O código é obrigatório.</span>
+                <span class="vs-field__error">O arquivo de código é obrigatório.</span>
             }
         </div>
 
@@ -32,7 +55,7 @@
         </div>
 
         <button class="vs-btn vs-btn--primary @(Analisando ? "vs-btn--loading" : "")"
-                disabled="@Analisando"
+                disabled="@(Analisando || !ArquivoCarregado)"
                 @onclick="AnalisarAsync">
             @if (Analisando)
             {
@@ -60,23 +83,53 @@
 </div>
 
 @code {
-    private string Codigo        { get; set; } = string.Empty;
+    private string Codigo { get; set; } = string.Empty;
     private string PromptOriginal { get; set; } = string.Empty;
-    private bool Analisando      { get; set; }
-    private bool MostrarErro     { get; set; }
-    private string ErroMensagem  { get; set; } = string.Empty;
+    private bool Analisando { get; set; }
+    private bool MostrarErro { get; set; }
+    private string ErroMensagem { get; set; } = string.Empty;
+    private bool ArquivoCarregado { get; set; }
+    private string NomeArquivo { get; set; } = string.Empty;
+    private long TamanhoArquivo { get; set; }
+    private bool UploadAreaHover { get; set; }
+    private string TamanhoArquivoFormatado => $"{TamanhoArquivo / 1024.0:N1} KB";
+    private string UploadAreaStyle => $"position:relative; display:block; width:100%; padding:34px 24px; border:2px dashed {(UploadAreaHover ? "#a78bfa" : "#6366f1")}; border-radius:18px; background:rgba(15,23,42,0.72); text-align:center; cursor:pointer; transition:border-color 160ms ease, background-color 160ms ease; box-shadow:inset 0 0 0 1px rgba(255,255,255,0.03);";
 
     private VibeScan.Blazor.Models.AnalisarResponse? Resultado { get; set; }
 
+    private async Task CarregarArquivo(InputFileChangeEventArgs e)
+    {
+        var arquivo = e.File;
+        ErroMensagem = string.Empty;
+        Resultado = null;
+
+        if (arquivo.Size > 200_000)
+        {
+            Codigo = string.Empty;
+            NomeArquivo = string.Empty;
+            TamanhoArquivo = 0;
+            ArquivoCarregado = false;
+            ErroMensagem = "Arquivo muito grande. O limite é 200KB.";
+            return;
+        }
+
+        using var stream = arquivo.OpenReadStream(maxAllowedSize: 200_000);
+        using var reader = new System.IO.StreamReader(stream);
+        Codigo = await reader.ReadToEndAsync();
+        NomeArquivo = arquivo.Name;
+        TamanhoArquivo = arquivo.Size;
+        ArquivoCarregado = true;
+    }
+
     private async Task AnalisarAsync()
     {
-        MostrarErro   = true;
-        ErroMensagem  = string.Empty;
+        MostrarErro = true;
+        ErroMensagem = string.Empty;
 
         if (string.IsNullOrWhiteSpace(Codigo)) return;
 
         Analisando = true;
-        Resultado  = null;
+        Resultado = null;
 
         try
         {
